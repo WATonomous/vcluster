@@ -60,7 +60,7 @@ func SingleNamespaceHostName(name, namespace, suffix string) string {
 	if name == "" {
 		return ""
 	}
-	return SafeConcatName(name, "x", namespace, "x", suffix)
+	return SafeConcatName("vc", name, "x", namespace, "x", suffix)
 }
 
 func (s *singleNamespace) HostNameCluster(name string) string {
